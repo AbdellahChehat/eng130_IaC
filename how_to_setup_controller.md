@@ -78,13 +78,18 @@
 14. To return back to controller enter `exit`
 15. Now we want to ssh into web db from insode the controller vm
 16. Enter `sudo ssh vagrant@192.168.56.12` enter then password `vagrant`
-17. `sudo nano hosts`
-18. ``` 
+17. **From the controller vm we would like to check if we can speak to the web and db vms**
+18. To do so follow the following steps 
+19. Run `sudo nano hosts`
+    
+20. Inside the hosts folder add the following 
+     ``` 
     [web]
     192.168.56.12 ansible_connection=ssh ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
     [db]
     192.168.56.13 ansible_connection=ssh ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
     ```
     - add screenshot
-19. `sudo ansible all -a "sudo apt update"`
-20. 
+21. Test by running `sudo ansible ping -m all ` or `sudo ansible -m ping web` or `sudo ansible -m ping db`
+22. `sudo ansible all -a "sudo apt update"`
+23. 
