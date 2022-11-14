@@ -60,6 +60,8 @@
 
 - Once all 3 are running open 3 terminals SSH into each VM and run `sudo apt-get update -y && sudo apt-get upgrade -y`
 
+---
+
 - Once completed follow the following steps:
   
 1. SSH into Controller VM
@@ -92,4 +94,4 @@
     - add screenshot
 21. Test by running `sudo ansible ping -m all ` or `sudo ansible -m ping web` or `sudo ansible -m ping db`
 22. `sudo ansible all -a "sudo apt update"`
-23. 
+    
