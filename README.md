@@ -12,14 +12,6 @@
 
 - Orchestration is the automated configuration, management, and coordination of computer systems, applications, and services. Orchestration helps IT to more easily manage complex tasks and workflows.
 
-### What is blue-print deployment ?
-
-- A blueprint is a package of deployable, reusable configuration and policy that implements and documents a specific opinionated solution. Blueprints enable developers to design infrastructure, platforms, and application services by composing and connecting cloud resources with declarative configuration.
-
-**AWS BLUEPRINT DEPLOYMENT**
-
-- This guidance deploys the AWS Service Catalog portfolios of tested and validated AWS services and third-party applications so that AWS Distributors and AWS Solution Providers can deploy, manage, and monitor solutions for their small and medium business (SMB) customers in the AWS Cloud. These portfolios can be deployed in a repeatable, and scalable, way to allow AWS Distributors and AWS Solution Providers to extend these solutions with their value-added capabilities.
-
 
 ---
 
@@ -44,3 +36,16 @@
 
 ![image-4](https://user-images.githubusercontent.com/115224560/201709295-cdafcfb2-d255-4c66-ab4b-59aeabbf0326.png)
 
+------
+
+
+### What is Blue grenn Deployment ?
+
+- Blue Green deployement is a release model the changes the traffic of users so that the organisation can update and ugrade their app wihtout causing a downtime. The users may be directed to an older version of the application while they work on the new version then the organisation gradually switches over to the new version making the old version a template or to be used as standby.
+
+### Benefits:
+
+1. Zero impact to users
+2. More Stability
+3. Zero Downtime
+4. Save money on cloud
