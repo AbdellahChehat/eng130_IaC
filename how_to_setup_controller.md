@@ -74,6 +74,7 @@
 7. Check `sudo apt-get install tree `
 
 **Connect to web/db from controller:**
+
 8. cd into `cd /etc`
 9.  cd into `cd ansible/`
 10. pwd = /etc/ansible
