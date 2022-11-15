@@ -31,6 +31,15 @@
 - It is used as a configuration managment tool 
 - Ansible® is an open source, command-line IT automation software application written in Python. It can configure systems, deploy software, and orchestrate advanced workflows to support application deployment, system updates, and more. Ansible's main strengths are simplicity and ease of use.
 
+## What is Ansible roles ?
+
+- A role is a set of Ansible tasks, handlers, and variables that are used together. Roles are a way of automatically loading related vars_files, tasks, and handlers together. Roles can be shared and reused.
+### What is inventory ?
+
+- An inventory is a list of hosts that Ansible manages. It is a simple text file that contains a list of hosts, one per line. It can also contain groups of hosts, and variables that apply to those hosts.
+
+
+
 
 -----------
 
@@ -51,3 +60,6 @@
 4. Save money on cloud
 
 <img width="337" alt="Screenshot 2022-11-15 at 09 07 50" src="https://user-images.githubusercontent.com/115224560/201877673-52628aa9-dda9-46af-a08a-d9cbc95cb67b.png">
+
+
+
