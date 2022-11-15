@@ -74,7 +74,6 @@
 7. Check `sudo apt-get install tree `
 
 **Connect to web/db from controller:**
-
 8. cd into `cd /etc`
 9.  cd into `cd ansible/`
 10. pwd = /etc/ansible
@@ -96,7 +95,7 @@
     192.168.56.13 ansible_connection=ssh ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
     ```
     - add screenshot
-21. Test by running `sudo ansible ping -m all ` or `sudo ansible -m ping web` or `sudo ansible -m ping db`
+21. Test by running `sudo ansible all -m ping` or `sudo ansible -m ping web` or `sudo ansible -m ping db`
 22. `sudo ansible all -a "sudo apt update"`
     
     --------
