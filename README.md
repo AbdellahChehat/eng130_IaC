@@ -48,7 +48,7 @@
 ------
 
 
-### What is Blue grenn Deployment ?
+### What is Blue green Deployment ?
 
 - Blue Green deployement is a release model the changes the traffic of users so that the organisation can update and ugrade their app wihtout causing a downtime. The users may be directed to an older version of the application while they work on the new version then the organisation gradually switches over to the new version making the old version a template or to be used as standby.
 
@@ -57,7 +57,9 @@
 1. Users are not impacted 
 2. More Stability
 3. Zero Downtime (Avoiding the loss of profits)
-4. Save money on cloud
+4. You can roll back to the previous environment if the new environment
+   is not working as expected.
+5. Save money on cloud
 
 <img width="337" alt="Screenshot 2022-11-15 at 09 07 50" src="https://user-images.githubusercontent.com/115224560/201877673-52628aa9-dda9-46af-a08a-d9cbc95cb67b.png">
 
