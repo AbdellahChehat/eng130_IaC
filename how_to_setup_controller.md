@@ -64,13 +64,16 @@
 
 - Once completed follow the following steps:
   
-1. SSH into Controller VM
+**Install Ansible**
+1. SSH into Controller VM `vagrant ssh controller`
 2. Run Update and Upgrade
 3. Run `sudo apt-get install software-properties-common`
 4. Run `sudo apt-add-repository ppa:ansible/ansible`
 5. Run `Sudo apt-get update`
 6. Run `sudo apt-get install ansible -y`
 7. Check `sudo apt-get install tree `
+
+**Connect to web/db from controller:**
 8. cd into `cd /etc`
 9.  cd into `cd ansible/`
 10. pwd = /etc/ansible
@@ -95,3 +98,21 @@
 21. Test by running `sudo ansible ping -m all ` or `sudo ansible -m ping web` or `sudo ansible -m ping db`
 22. `sudo ansible all -a "sudo apt update"`
     
+    --------
+
+    ### Adhoc Commands 
+
+    ```
+    ansible all -a "uname -a"
+    ansible all -m ping     # ping all hosts
+    ansible web -m ping     # ping web hosts
+    ansible db -m ping      # ping db hosts
+    ansible all -a "free"   # Find free memory 
+    ```
+
+    ### How to copy files
+
+    ```
+    ansible all -m copy -a "src=/etc/hosts dest=/home/vagrant"
+    ansible all -m copy -a "src=/etc/hosts dest=/tmp/hosts owner=vagrant group=vagrant mode=0644" # copy with permissions
+    ```
